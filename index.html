@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Import the component -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+
     <title>Web AR</title>
   </head>
   <body>
@@ -75,7 +85,8 @@
       shadow-intensity="1"
       camera-controls
       touch-action="pan-y"
-      src="/assets/img/sofa.glb"
+      src="assets/img/laptop.glb"
+      poster="assets/img/laptop.png"
       alt="A 3D model of an sofa."
     >
       <button
@@ -148,8 +159,7 @@
       <div id="controls" class="dim">
         <label for="src">Product:</label>
         <select id="src">
-          <option value="/assets/img/sofa.glb">sofa</option>
-        </select
+          <option value="assets/img/laptop.glb">sofa</option></select
         ><br />
 
         <label for="show-dimensions">Show Dimensions:</label>
