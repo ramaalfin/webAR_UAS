@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Web AR</title>
   </head>
   <body>
@@ -75,8 +75,8 @@
       shadow-intensity="1"
       camera-controls
       touch-action="pan-y"
-      src="../../assets/ShopifyModels/Chair.glb"
-      alt="A 3D model of an armchair."
+      src="/assets/img/sofa.glb"
+      alt="A 3D model of an sofa."
     >
       <button
         slot="hotspot-dot+X-Y+Z"
@@ -148,11 +148,8 @@
       <div id="controls" class="dim">
         <label for="src">Product:</label>
         <select id="src">
-          <option value="../../assets/ShopifyModels/Chair.glb">Chair</option>
-          <option value="../../assets/ShopifyModels/Mixer.glb">Mixer</option>
-          <option value="../../assets/ShopifyModels/GeoPlanter.glb">
-            Cactus
-          </option></select
+          <option value="/assets/img/sofa.glb">sofa</option>
+        </select
         ><br />
 
         <label for="show-dimensions">Show Dimensions:</label>
