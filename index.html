@@ -57,7 +57,7 @@
         outline: 1px solid #4285f4;
       } */
 
-      @keyframes circle {
+      /* @keyframes circle {
         from {
           transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
         }
@@ -82,13 +82,13 @@
         bottom: 175px;
         animation: elongate 2s infinite ease-in-out alternate;
         display: none;
-      }
+      } */
 
-      model-viewer[ar-status="session-started"] > #ar-prompt {
+      /* model-viewer[ar-status="session-started"] > #ar-prompt {
         display: block;
-      }
+      } */
 
-      model-viewer > #ar-prompt > img {
+      /* model-viewer > #ar-prompt > img {
         animation: circle 4s linear infinite;
       }
 
@@ -98,11 +98,11 @@
         transform: translateX(-50%);
         bottom: 175px;
         display: none;
-      }
+      } */
 
-      model-viewer[ar-tracking="not-tracking"] > #ar-failure {
+      /* model-viewer[ar-tracking="not-tracking"] > #ar-failure {
         display: block;
-      }
+      } */
 
       .slider {
         width: 100%;
@@ -162,13 +162,10 @@
       touch-action="pan-y"
       alt="A 3D model carousel"
     >
-      <button slot="ar-button" id="ar-button">View in your space</button>
 
       <div id="ar-prompt">
         <img src="assets/img/hand.png" />
       </div>
-
-      <button id="ar-failure">AR is not tracking!</button>
 
       <div class="slider">
         <div class="slides">
