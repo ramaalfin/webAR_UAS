@@ -7,6 +7,11 @@
     <title>Document</title>
 
     <script
+      src="https://cdn.jsdelivr.net/npm/focus-visible@5.0.2/dist/focus-visible.min.js"
+      defer
+    ></script>
+
+    <script
       type="module"
       src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js"
     ></script>
@@ -24,7 +29,7 @@
         height: 500px;
       }
 
-      /* #ar-button {
+      #ar-button {
         background-image: url(assets/img/ic_view_in_ar_new_googblue_48dp.png);
         background-repeat: no-repeat;
         background-size: 20px 20px;
@@ -55,9 +60,9 @@
 
       #ar-button:focus-visible {
         outline: 1px solid #4285f4;
-      } */
+      }
 
-      /* @keyframes circle {
+      @keyframes circle {
         from {
           transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
         }
@@ -82,13 +87,13 @@
         bottom: 175px;
         animation: elongate 2s infinite ease-in-out alternate;
         display: none;
-      } */
+      }
 
-      /* model-viewer[ar-status="session-started"] > #ar-prompt {
+      model-viewer[ar-status="session-started"] > #ar-prompt {
         display: block;
-      } */
+      }
 
-      /* model-viewer > #ar-prompt > img {
+      model-viewer > #ar-prompt > img {
         animation: circle 4s linear infinite;
       }
 
@@ -98,11 +103,11 @@
         transform: translateX(-50%);
         bottom: 175px;
         display: none;
-      } */
+      }
 
-      /* model-viewer[ar-tracking="not-tracking"] > #ar-failure {
+      model-viewer[ar-tracking="not-tracking"] > #ar-failure {
         display: block;
-      } */
+      }
 
       .slider {
         width: 100%;
@@ -154,7 +159,6 @@
       poster="assets/img/Chair.webp"
       shadow-intensity="1"
       ar
-      ar-modes="webxr"
       ar-scale="fixed"
       camera-orbit="-30deg auto auto"
       max-camera-orbit="auto 100deg auto"
@@ -162,10 +166,13 @@
       touch-action="pan-y"
       alt="A 3D model carousel"
     >
+      <!-- <button slot="ar-button" id="ar-button">View in your space</button> -->
 
       <div id="ar-prompt">
         <img src="assets/img/hand.png" />
       </div>
+
+      <button id="ar-failure">AR is not tracking!</button>
 
       <div class="slider">
         <div class="slides">
