@@ -76,7 +76,6 @@ body .btn-blue {
   z-index: 20;
   bottom: 50px;
   left: 0px;
-  width: 100%;
 }
 
 .carousel-control-prev {
@@ -118,10 +117,6 @@ body .btn-blue {
     flex-direction: column-reverse;
   }
 
-  .buttons{
-    top: 10px;
-  }
-
   .content-text {
     margin-top: 20px;
   }
@@ -148,6 +143,10 @@ body .btn-blue {
     font-size: 16px;
     font-weight: 400;
     margin: 20px 0px 30px;
+  }
+
+  .buttons {
+    left: 260px;
   }
 
 }
