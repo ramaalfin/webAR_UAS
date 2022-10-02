@@ -144,6 +144,12 @@ body .btn-blue {
     width: 1.2rem;
   }
 
+  .deskripsi {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0px 30px;
+  }
+
 }
 /* 3D model */
 /* This keeps child nodes hidden while the element loads */
