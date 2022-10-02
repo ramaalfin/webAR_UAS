@@ -118,15 +118,12 @@ body .btn-blue {
     flex-direction: column-reverse;
   }
 
-  .content-text {
-    position: absolute;
-    bottom: 0px;
-    margin-top: 0px;
-    z-index: 20;
-}
-
   .buttons{
     top: 10px;
+  }
+
+  .content-text {
+    margin-top: 20px;
   }
 
   .carousel-control-prev {
@@ -145,10 +142,6 @@ body .btn-blue {
   
   .carousel-control-next-icon, .carousel-control-prev-icon {
     width: 1.2rem;
-  }
-
-  .mobile-screen{
-    color: #fff;
   }
 
 }
