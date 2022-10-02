@@ -6,7 +6,7 @@
 model-viewer {
   background-color: #eee;
   overflow-x: hidden;
-  width: 100%;
+  width: 500px;
   height: 500px;
 }
 
@@ -162,7 +162,7 @@ body .header {
 }
 
 body .tag-line .headline {
-  font-size: 48px !important;
+  font-size: 45px !important;
   line-height: 125%;
   font-weight: 600;
   margin-bottom: 30px;
@@ -170,7 +170,7 @@ body .tag-line .headline {
 
 @media only screen and (min-width: 768px) {
   body .tag-line {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   body .tag-line .headline {
@@ -194,7 +194,7 @@ body .btn-started {
 
 @media only screen and (min-width: 768px) {
   body .btn-started {
-    margin-top: 116px !important;
+    margin-top: 80px !important;
   }
 }
 
@@ -216,6 +216,7 @@ body .btn-started button {
   font-size: 24px;
   font-weight: 600;
   color: #082d28;
+  border-radius: 10px;
 }
 
 body .cl-light {
@@ -231,9 +232,10 @@ body .font-lora {
 }
 
 .bg-workly {
-  height: 780px;
+  height: 700px;
   max-width: 442px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 25px;
+  top: 25px;
+  border-radius: 15px;
 }
