@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+}
+
+.title {
+  font-weight: bold;
+  color: #000;
+  margin-top: 30px;
+}
+
+.symbol {
+  -webkit-text-stroke: 5px white;
+  font-size: 150px;
+  color: rgb(22, 92, 90);
+}
+
+.text {
+  margin-top: 5px;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+  font-weight: lighter;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(250, 157, 2);
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: transparent;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+button a {
+  color: #000;
+  text-transform: capitalize;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .content{
+    margin: 21% auto;
+    font-size: 26px;
+  }
+  .title{
+    margin-top: 25px;
+  }
+  .text{
+    font-size: 20px;
+  }
+  button a{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .symbol{
+    font-size: 140px;
+  }
+  .content{
+    margin: 33% auto;
+    font-size: 20px;
+  }
+  .text{
+    font-size: 18px;
+  }
+  button{
+    padding: 8px 18px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px){
+  .content{
+    margin: 35% auto;
+    font-size: 18px;
+  }
+  .text{
+    font-size: 16px;
+  }
+  button{
+    margin-top: 15px;
+    padding: 8px 18px;
+  }
+}

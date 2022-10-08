@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3Daily</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <script
       type="module"
@@ -59,21 +68,27 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarTogglerDemo02"
+          >
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link px-md-4 active" aria-current="page" href="#"
+                <a
+                  class="nav-link px-md-4 active"
+                  aria-current="page"
+                  href="#tentang"
                   >About</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link px-md-4" href="#">Products</a>
+                <a class="nav-link px-md-4" href="#produk">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-md-4" href="#">Teams</a>
+                <a class="nav-link px-md-4" href="#tim">Teams</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-md-4" href="#">Contacts</a>
+                <a class="nav-link px-md-4" href="#kontak">Contacts</a>
               </li>
             </ul>
           </div>
@@ -81,57 +96,85 @@
       </nav>
     </section>
 
-    <section>
-      <section class="container">
-        <div class="row mx-0" id="header">
-          <div class="col-xl-6 content-text">
-            <div class="title">
-              <h1>Let's see your furniture on AR</h1>
-            </div>
-            <div class="deskripsi">
-              <p class="descript-head">
-                3Daily menyediakan berbagai model furnitur rumah berbentuk 3D agar calon pembeli dapat merasakannya menggunakan teknologi Augmented Reality (AR).
-              </p>
-            </div>
-            <div>
-              <a
-              class="btn btn-get-started text-white"
-              href="#"
-              >Get Started</a
-            >
-            </div>
+    <section class="container">
+      <div class="row mx-0" id="header">
+        <div class="col-xl-6 content-text">
+          <div class="title">
+            <h1>Let's see your furniture on AR</h1>
           </div>
-          <div class="col-xl-6 my-auto content-img">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/img/bilal-mansuri-_nFgGYxeGD4-unsplash.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/img/inside-weather-BayIzHKkjM4-unsplash.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/img/inside-weather-ej3UoXYMaRI-unsplash.jpg" class="d-block w-100" alt="...">
-                </div>
+          <div class="deskripsi">
+            <p class="descript-head">
+              3Daily menyediakan berbagai model 3D furnitur rumah agar calon
+              pembeli dapat merasakannya menggunakan teknologi Augmented Reality
+              (AR).
+            </p>
+          </div>
+          <div>
+            <a class="btn btn-get-started text-white" href="#">Get Started</a>
+          </div>
+        </div>
+        <div class="col-xl-6 my-auto content-img">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/img/bilal-mansuri-_nFgGYxeGD4-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
-              <div class="buttons">
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/inside-weather-BayIzHKkjM4-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/inside-weather-ej3UoXYMaRI-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="buttons">
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
 
     <!-- 3D model -->
-    <section class="mt-4">
+    <section id="produk" class="mt-4">
       <div class="mt-lg-4">
         <model-viewer
           src="assets/img/Chair.glb"
@@ -148,13 +191,13 @@
           alt="A 3D model carousel"
         >
           <button slot="ar-button" id="ar-button">View in your space</button>
-    
+
           <div id="ar-prompt">
             <img src="assets/img/hand.png" />
           </div>
-    
+
           <button id="ar-failure">AR is not tracking!</button>
-    
+
           <div class="slider">
             <div class="slides">
               <button
@@ -172,11 +215,11 @@
                 onclick="switchSrc(this, 'wooden_sofa')"
                 style="background-image: url('assets/img/wooden_sofa.webp')"
               ></button>
-              <button
+              <!-- <button
                 class="slide1"
                 onclick="switchSrc(this, 'lemariii')"
                 style="background-image: url('assets/img/lemariii.glb')"
-              ></button>
+              ></button> -->
               <button
                 class="slide1"
                 onclick="switchSrc(this, 'lemari2')"
@@ -192,16 +235,16 @@
                 onclick="switchSrc(this, 'kursii3')"
                 style="background-image: url('assets/img/kursii3.glb')"
               ></button>
-              <button
+              <!-- <button
                 class="slide1"
                 onclick="switchSrc(this, 'kursiiii1')"
                 style="background-image: url('assets/img/kursiiii1.glb')"
-              ></button>
-              <button
+              ></button> -->
+              <!-- <button
                 class="slide1"
                 onclick="switchSrc(this, 'meja3')"
                 style="background-image: url('assets/img/meja3.glb')"
-              ></button>
+              ></button> -->
               <button
                 class="slide1"
                 onclick="switchSrc(this, 'MEJA2')"
@@ -238,6 +281,285 @@
       </div>
     </section>
 
+    <!-- OUR TEAM -->
+    <section id="tim" class="pb-5 position-relative bg-dark px-4 mx-n3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-start mb-5 mt-5">
+            <h3 class="text-white z-index-1 position-relative">
+              Anggota Kelompok
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile mt-4">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-n5">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img
+                        class="w-100 shadow-lg"
+                        src="assets/img/me.png"
+                        alt="image"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 my-auto">
+                  <div class="card-body ps-lg-0">
+                    <h5 class="mb-0">Ade Dwinandar R</h5>
+                    <h6 class="text-info">Developer</h6>
+                    <p class="mb-0">
+                      Artist is a term applied to a person who engages in an
+                      activity deemed to be an art.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile mt-lg-4 mt-5">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-n5">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img
+                        class="w-100 shadow-lg"
+                        src="assets/img/me.png"
+                        alt="image"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 my-auto">
+                  <div class="card-body ps-lg-0">
+                    <h5 class="mb-0">Rama Alfin Baehaqi</h5>
+                    <h6 class="text-info">Developer</h6>
+                    <p class="mb-0">
+                      Artist is a term applied to a person who engages in an
+                      activity deemed to be an art.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile mt-lg-4 mt-5">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-n5">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img
+                        class="w-100 shadow-lg"
+                        src="assets/img/me.png"
+                        alt="image"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 my-auto">
+                  <div class="card-body ps-lg-0">
+                    <h5 class="mb-0">M. Naufal</h5>
+                    <h6 class="text-info">3D Model Designer</h6>
+                    <p class="mb-0">
+                      Artist is a term applied to a person who engages in an
+                      activity deemed to be an art.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile mt-lg-4 mt-5">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-n5">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img
+                        class="w-100 shadow-lg"
+                        src="assets/img/me.png"
+                        alt="image"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 my-auto">
+                  <div class="card-body ps-lg-0">
+                    <h5 class="mb-0">Dito Iqbal K</h5>
+                    <h6 class="text-info">Reporting</h6>
+                    <p class="mb-0">
+                      Artist is a term applied to a person who engages in an
+                      activity deemed to be an art.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-6 col-12">
+            <div class="card card-profile mt-lg-4 mt-5">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-n5">
+                  <a href="javascript:;">
+                    <div class="p-3 pe-md-0">
+                      <img
+                        class="w-100 shadow-lg"
+                        src="assets/img/me.png"
+                        alt="image"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 my-auto">
+                  <div class="card-body ps-lg-0">
+                    <h5 class="mb-0">M. Rafi</h5>
+                    <h6 class="text-info">Reporting</h6>
+                    <p class="mb-0">
+                      Artist is a term applied to a person who engages in an
+                      activity deemed to be an art.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="kontak" class="p-2 footer-section">
+      <div class="container">
+        <div class="footer-content pt-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img
+                      src="assets/img/WhatsApp_Image_2022-01-20_at_14.46.54-removebg-preview.png"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    3Daily menyediakan berbagai model 3D furnitur rumah agar
+                    calon pembeli dapat merasakannya menggunakan teknologi
+                    Augmented Reality (AR).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Find Me</h3>
+                </div>
+                <ul>
+                  <li>
+                    <h6 class="text-capitalize">Telepon</h6>
+                    <p>0812-4687--3358</p>
+                  </li>
+                  <li>
+                    <h6 class="text-capitalize">Address</h6>
+                    <p>Jakarta, Indonesia</p>
+                  </li>
+                  <li>
+                    <div class="footer-social-icon">
+                      <a href="#"
+                        ><i class="fab fa-instagram instagram-bg"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fab fa-facebook-f facebook-bg"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fab fa-linkedin linkedin-bg"></i
+                      ></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Contact Us</h3>
+                </div>
+                <p class="mb-2">
+                  Untuk informasi lebih lanjut silahkan mengisi data berikut.
+                </p>
+
+                <div class="email-form">
+                  <form
+                    id="contact"
+                    action="https://formsubmit.co/ramaalfin7@gmail.com"
+                    method="POST"
+                  >
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none" />
+
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false" />
+
+                    <input
+                      type="hidden"
+                      name="_next"
+                      value="https://web-ar-uas.vercel.app/success.html"
+                    />
+
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      value="New submission!"
+                    />
+
+                    <input type="hidden" name="_template" value="table" />
+
+                    <fieldset>
+                      <input
+                        placeholder="Your Email Address"
+                        type="email"
+                        name="email"
+                        tabindex="2"
+                        required
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <textarea
+                        placeholder="Type your Message Here...."
+                        name="message"
+                        tabindex="5"
+                        required
+                      ></textarea>
+                    </fieldset>
+                    <fieldset>
+                      <button name="submit" type="submit">Submit</button>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 text-center mt-2">
+              <p class="text-dark text-sm font-weight-normal">
+                All rights reserved. Copyright ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script type="module">
       const modelViewer = document.querySelector("model-viewer");
 
@@ -260,8 +582,8 @@
         });
     </script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
   </body>
