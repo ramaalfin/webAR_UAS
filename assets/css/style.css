@@ -157,10 +157,9 @@ body .btn-blue {
 }
 
 model-viewer {
-  background-color: #eee;
   overflow-x: hidden;
   width: 100%;
-  height: 500px;
+  height: 80vh;
 }
 
 #ar-button {
@@ -173,7 +172,7 @@ model-viewer {
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  bottom: 132px;
+  bottom: 150px;
   padding: 0px 16px 0px 40px;
   font-family: Roboto Regular, Helvetica Neue, sans-serif;
   font-size: 14px;
@@ -287,6 +286,20 @@ model-viewer[ar-tracking="not-tracking"] > #ar-failure {
 
 #produk .container{
   width: 100%;
+}
+
+#default-poster {
+  width: 100%;
+  height: 56%;
+  display: block;
+  position: absolute;
+  border: none;
+  padding: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff0;
+  top: -110px;
 }
 
 
