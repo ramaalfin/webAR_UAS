@@ -476,6 +476,10 @@ fieldset {
     justify-content: center;
   }
 
+  .tab-content>.active {
+    display: block;
+  }
+
   .tab-pane {
     display: flex;
     border: 1px solid #d5d5d5;
