@@ -174,110 +174,73 @@
     </section>
 
     <!-- 3D model -->
-    <section id="produk" class="mt-4">
-      <div class="mt-lg-4">
-        <model-viewer
-          src="assets/img/Chair.glb"
-          poster="assets/img/Chair.webp"
-          shadow-intensity="1"
-          ar
-          ar-modes="scene-viewer quick-look"
-          auto-rotate
-          ar-scale="fixed"
-          camera-orbit="-30deg auto auto"
-          max-camera-orbit="auto 100deg auto"
-          camera-controls
-          touch-action="pan-y"
-          alt="A 3D model carousel"
-        >
-          <button slot="ar-button" id="ar-button">View in your space</button>
+    <section id="produk" class="mt-4 px-4">
+      <div class="container">
+        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+          <a class="nav-link flex-sm-fill text-sm-center active" id="pills-sofa-tab" data-bs-toggle="pill" data-bs-target="#pills-sofa" type="button" role="tab" aria-controls="pills-sofa" aria-selected="true">sofa</a>
 
-          <div id="ar-prompt">
-            <img src="assets/img/hand.png" />
-          </div>
+          <a class="nav-link flex-sm-fill text-sm-center" id="pills-meja-tab" data-bs-toggle="pill" data-bs-target="#pills-meja" type="button" role="tab" aria-controls="pills-meja" aria-selected="true">meja</a>
 
-          <button id="ar-failure">AR is not tracking!</button>
+          <a class="nav-link flex-sm-fill text-sm-center" id="pills-kursi-tab" data-bs-toggle="pill" data-bs-target="#pills-kursi" type="button" role="tab" aria-controls="pills-kursi" aria-selected="true">kursi</a>
+        </nav>
+  
+        <div class="tab-content" id="pills-tabContent">
+          <!-- SOFA -->
+          <div class="tab-pane fade show active" id="pills-sofa" role="tabpanel" aria-labelledby="pills-sofa-tab">
+            <model-viewer
+            src="assets/img/Asset_AR/Glb/kursi1.glb"
+            poster="assets/img/Asset_AR/Png/kursi1.png"
+            shadow-intensity="1"
+            ar
+            ar-modes="scene-viewer quick-look"
+            auto-rotate
+            ar-scale="fixed"
+            camera-orbit="-30deg auto auto"
+            max-camera-orbit="auto 100deg auto"
+            camera-controls
+            touch-action="pan-y"
+            alt="A 3D model carousel"
+          >
+            <button slot="ar-button" id="ar-button">View in your space</button>
 
-          <div class="slider">
-            <div class="slides">
-              <button
-                class="slide1 selected"
-                onclick="switchSrc(this, 'Chair')"
-                style="background-image: url('assets/img/Chair.webp')"
-              ></button>
-              <button
-                class="slide1"
-                onclick="switchSrc(this, 'kursi')"
-                style="background-image: url('assets/img/kursi.webp')"
-              ></button>
-              <button
-                class="slide1"
-                onclick="switchSrc(this, 'wooden_sofa')"
-                style="background-image: url('assets/img/wooden_sofa.webp')"
-              ></button>
-              <!-- <button
-                class="slide1"
-                onclick="switchSrc(this, 'lemariii')"
-                style="background-image: url('assets/img/lemariii.glb')"
-              ></button> -->
-              <button
-                class="slide1"
-                onclick="switchSrc(this, 'lemari2')"
-                style="background-image: url('assets/img/lemari2.glb')"
-              ></button>
-              <button
-                class="slide1"
-                onclick="switchSrc(this, 'kursi2')"
-                style="background-image: url('assets/img/kursi2.glb')"
-              ></button>
-              <button
-                class="slide1"
-                onclick="switchSrc(this, 'kursii3')"
-                style="background-image: url('assets/img/kursii3.glb')"
-              ></button>
-              <!-- <button
-                class="slide1"
-                onclick="switchSrc(this, 'kursiiii1')"
-                style="background-image: url('assets/img/kursiiii1.glb')"
-              ></button> -->
-              <!-- <button
-                class="slide1"
-                onclick="switchSrc(this, 'meja3')"
-                style="background-image: url('assets/img/meja3.glb')"
-              ></button> -->
-              <button
-                class="slide1"
-                onclick="switchSrc(this, 'MEJA2')"
-                style="background-image: url('assets/img/MEJA2.glb')"
-              ></button>
-              <button
-                class="slide1"
-                onclick="switchSrc(this, 'sofa')"
-                style="background-image: url('assets/img/sofa.glb')"
-              ></button>
-              <button
-                class="slide1"
-                onclick="switchSrc(this, 'sofaa')"
-                style="background-image: url('assets/img/sofaa.glb')"
-              ></button>
-              <button
-                class="slide1"
-                onclick="switchSrc(this, 'sofa2')"
-                style="background-image: url('assets/img/sofa2.glb')"
-              ></button>
-              <button
-                class="slide1"
-                onclick="switchSrc(this, 'sofaa3')"
-                style="background-image: url('assets/img/sofaa3.glb')"
-              ></button>
-              <button
-                class="slide1"
-                onclick="switchSrc(this, 'sofaa2')"
-                style="background-image: url('assets/img/sofaa2.glb')"
-              ></button>
+            <div id="ar-prompt">
+              <img src="assets/img/Asset_AR/hand.png" />
             </div>
+
+            <button id="ar-failure">AR is not tracking!</button>
+
+            <div class="slider">
+              <div class="slides">
+                <button
+                  class="slide1 selected"
+                  onclick="switchSrc(this, 'kursi1')"
+                  style="background-image: url('assets/img/Asset_AR/kursi1.png')"
+                ></button>
+                <button
+                  class="slide1"
+                  onclick="switchSrc(this, 'kursi2')"
+                  style="background-image: url('assets/img/Asset_AR/kursi2.png')"
+                ></button>
+                <button
+                  class="slide1"
+                  onclick="switchSrc(this, 'kursi3')"
+                  style="background-image: url('assets/img/Asset_AR/kursi3.png')"
+                ></button>
+              </div>
+            </div>
+          </model-viewer>
           </div>
-        </model-viewer>
+
+          <!-- MEJA -->
+          <div class="tab-pane fade" id="pills-meja" role="tabpanel" aria-labelledby="pills-meja-tab">
+
+          </div>
+
+          <!-- KURSI -->
+          <div class="tab-pane fade" id="pills-kursi" role="tabpanel" aria-labelledby="pills-kursi-tab">
+            
+          </div>
+        </div>
       </div>
     </section>
 
@@ -499,7 +462,6 @@
 
                 <div class="email-form">
                   <form
-                    id="contact"
                     action="https://formsubmit.co/ramaalfin7@gmail.com"
                     method="POST"
                   >
@@ -566,8 +528,8 @@
       window.switchSrc = (element, name) => {
         const base = "assets/img/" + name;
         modelViewer.src = base + ".glb";
-        modelViewer.poster = base + ".webp";
-        const slides = document.querySelectorAll(".slide");
+        modelViewer.poster = base + ".png";
+        const slides = document.querySelectorAll(".slide1");
         slides.forEach((element) => {
           element.classList.remove("selected");
         });

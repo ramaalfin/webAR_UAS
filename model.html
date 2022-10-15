@@ -1,0 +1,154 @@
+
+
+      <ul class="nav nav-pills mt-4 mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-sofa-tab" data-bs-toggle="pill" data-bs-target="#pills-sofa" type="button" role="tab" aria-controls="pills-sofa" aria-selected="true">sofa</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-meja-tab" data-bs-toggle="pill" data-bs-target="#pills-meja" type="button" role="tab" aria-controls="pills-meja" aria-selected="false">meja</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-kursi-tab" data-bs-toggle="pill" data-bs-target="#pills-kursi" type="button" role="tab" aria-controls="pills-kursi" aria-selected="false">kursi</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <!-- SOFA -->
+        <div class="tab-pane fade show active" id="pills-sofa" role="tabpanel" aria-labelledby="pills-sofa-tab" tabindex="0">
+          <model-viewer
+            src="assets/img/Asset_AR/Glb/kursi1.glb"
+            poster="assets/img/Asset_AR/Png/kursi1.png"
+            shadow-intensity="1"
+            ar
+            ar-modes="scene-viewer quick-look"
+            auto-rotate
+            ar-scale="fixed"
+            camera-orbit="-30deg auto auto"
+            max-camera-orbit="auto 100deg auto"
+            camera-controls
+            touch-action="pan-y"
+            alt="A 3D model carousel"
+          >
+            <button slot="ar-button" id="ar-button">View in your space</button>
+
+            <div id="ar-prompt">
+              <img src="assets/img/Asset_AR/hand.png" />
+            </div>
+
+            <button id="ar-failure">AR is not tracking!</button>
+
+            <div class="slider">
+              <div class="slides">
+                <button
+                  class="slide1 selected"
+                  onclick="switchSrc(this, 'Chair')"
+                  style="background-image: url('assets/img/Asset_AR/Chair.webp')"
+                ></button>
+                <button
+                  class="slide1"
+                  onclick="switchSrc(this, 'kursi')"
+                  style="background-image: url('assets/img/Asset_AR/kursi.webp')"
+                ></button>
+                <button
+                  class="slide1"
+                  onclick="switchSrc(this, 'wooden_sofa')"
+                  style="background-image: url('assets/img/Asset_AR/wooden_sofa.webp')"
+                ></button>
+              </div>
+            </div>
+          </model-viewer>
+        </div>
+
+        <!-- Meja -->
+        <div class="tab-pane fade" id="pills-meja" role="tabpanel" aria-labelledby="pills-meja-tab" tabindex="0">
+          <model-viewer
+            src="assets/img/Asset_AR/Chair.glb"
+            poster="assets/img/Asset_AR/Chair.webp"
+            shadow-intensity="1"
+            ar
+            ar-modes="scene-viewer quick-look"
+            auto-rotate
+            ar-scale="fixed"
+            camera-orbit="-30deg auto auto"
+            max-camera-orbit="auto 100deg auto"
+            camera-controls
+            touch-action="pan-y"
+            alt="A 3D model carousel"
+          >
+            <button slot="ar-button" id="ar-button">View in your space</button>
+
+            <div id="ar-prompt">
+              <img src="assets/img/Asset_AR/hand.png" />
+            </div>
+
+            <button id="ar-failure">AR is not tracking!</button>
+
+            <div class="slider">
+              <div class="slides">
+                <button
+                  class="slide1 selected"
+                  onclick="switchSrc(this, 'Chair')"
+                  style="background-image: url('assets/img/Asset_AR/Chair.webp')"
+                ></button>
+                <button
+                  class="slide1"
+                  onclick="switchSrc(this, 'kursi')"
+                  style="background-image: url('assets/img/Asset_AR/kursi.webp')"
+                ></button>
+                <button
+                  class="slide1"
+                  onclick="switchSrc(this, 'wooden_sofa')"
+                  style="background-image: url('assets/img/Asset_AR/wooden_sofa.webp')"
+                ></button>
+                
+              </div>
+            </div>
+          </model-viewer>
+        </div>
+
+        <!-- Kursi -->
+        <div class="tab-pane fade" id="pills-kursi" role="tabpanel" aria-labelledby="pills-kursi-tab" tabindex="0">
+          <model-viewer
+            src="assets/img/Asset_AR/Chair.glb"
+            poster="assets/img/Asset_AR/Chair.webp"
+            shadow-intensity="1"
+            ar
+            ar-modes="scene-viewer quick-look"
+            auto-rotate
+            ar-scale="fixed"
+            camera-orbit="-30deg auto auto"
+            max-camera-orbit="auto 100deg auto"
+            camera-controls
+            touch-action="pan-y"
+            alt="A 3D model carousel"
+          >
+            <button slot="ar-button" id="ar-button">View in your space</button>
+
+            <div id="ar-prompt">
+              <img src="assets/img/Asset_AR/hand.png" />
+            </div>
+
+            <button id="ar-failure">AR is not tracking!</button>
+
+            <div class="slider">
+              <div class="slides">
+                <button
+                  class="slide1 selected"
+                  onclick="switchSrc(this, 'Chair')"
+                  style="background-image: url('assets/img/Asset_AR/Chair.webp')"
+                ></button>
+                <button
+                  class="slide1"
+                  onclick="switchSrc(this, 'kursi')"
+                  style="background-image: url('assets/img/Asset_AR/kursi.webp')"
+                ></button>
+                <button
+                  class="slide1"
+                  onclick="switchSrc(this, 'wooden_sofa')"
+                  style="background-image: url('assets/img/Asset_AR/wooden_sofa.webp')"
+                ></button>
+                
+              </div>
+            </div>
+          </model-viewer>
+        </div>
+      </div>
