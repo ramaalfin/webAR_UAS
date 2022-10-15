@@ -96,64 +96,38 @@ body .btn-blue {
   width: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
-  body #header {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
 
-  body .title h1 {
-    font-size: 48px;
-  }
-}
 
-@media screen and (max-width: 475px) {
-  .navbar-toggler {
-    padding: .25rem 0.5rem;
-  }
 
-  body #header {
-    margin-top: 10px;
-    flex-direction: column-reverse;
-  }
-
-  .content-text {
-    margin-top: 20px;
-  }
-
-  .carousel-control-prev {
-    left: 25px;
-    width: 35px;
-    height: 35px;
-    background-color: #000;
-  }
-  
-  .carousel-control-next {
-    left: 65px;
-    background-color: #000;
-    width: 35px;
-    height: 35px;
-  }
-  
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 1.2rem;
-  }
-
-  .deskripsi {
-    font-size: 16px;
-    font-weight: 400;
-    margin: 20px 0px 30px;
-  }
-
-  .buttons {
-    left: 250px;
-  }
-
-}
 /* 3D model */
 /* This keeps child nodes hidden while the element loads */
 :not(:defined) > * {
   display: none;
+}
+
+#produk .container{
+  width: 90%;
+}
+
+#produk nav {
+  border: 1px solid #d5d5d5;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nav-pills .nav-link{
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.tab-pane{
+  display: flex;
+  border: 1px solid #d5d5d5;
+  padding: 20px;
+  border-radius: 20px;
+  align-items: center;
+  margin: 20px auto;
+
 }
 
 model-viewer {
@@ -172,7 +146,7 @@ model-viewer {
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  bottom: 150px;
+  bottom: 60px;
   padding: 0px 16px 0px 40px;
   font-family: Roboto Regular, Helvetica Neue, sans-serif;
   font-size: 14px;
@@ -241,16 +215,9 @@ model-viewer[ar-tracking="not-tracking"] > #ar-failure {
   display: block;
 }
 
-.slider {
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-  position: absolute;
-  bottom: 16px;
-}
-
 .slides {
-  display: flex;
+  display: grid;
+  justify-content: flex-start;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -284,23 +251,6 @@ model-viewer[ar-tracking="not-tracking"] > #ar-failure {
   outline: 1px solid #4285f4;
 }
 
-#produk .container{
-  width: 100%;
-}
-
-#default-poster {
-  width: 100%;
-  height: 56%;
-  display: block;
-  position: absolute;
-  border: none;
-  padding: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fff0;
-  top: -110px;
-}
 
 
 /* OUR TEAM */
@@ -447,4 +397,96 @@ fieldset {
 
 .footer-content p{
   color: #7e7e7e;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  body #header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  body .title h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .navbar-toggler {
+    padding: .25rem 0.5rem;
+  }
+
+  body #header {
+    margin-top: 10px;
+    flex-direction: column-reverse;
+  }
+
+  .content-text {
+    margin-top: 20px;
+  }
+
+  .carousel-control-prev {
+    left: 25px;
+    width: 35px;
+    height: 35px;
+    background-color: #000;
+  }
+  
+  .carousel-control-next {
+    left: 65px;
+    background-color: #000;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 1.2rem;
+  }
+
+  .deskripsi {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0px 30px;
+  }
+
+  .buttons {
+    left: 250px;
+  }
+
+  
+  /* 3D Model */
+
+  #produk .container{
+    width: 100%;
+  }
+
+  #ar-button {
+    bottom: 30px;
+  }
+
+  #produk .slider {
+    top: unset;
+    bottom: 16px;
+  }
+
+  #produk .slides {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab-pane {
+    display: flex;
+    border: 1px solid #d5d5d5;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+  }
+
+  model-viewer {
+    overflow-x: hidden;
+    width: 100%;
+    height: 50vh;
+  }
+
 }

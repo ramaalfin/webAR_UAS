@@ -186,7 +186,7 @@
   
         <div class="tab-content" id="pills-tabContent">
           <!-- SOFA -->
-          <div class="tab-pane fade show active" id="pills-sofa" role="tabpanel" aria-labelledby="pills-sofa-tab">
+          <div class="flex-row-reverse tab-pane fade show active" id="pills-sofa" role="tabpanel" aria-labelledby="pills-sofa-tab">
             <model-viewer
             src="assets/img/Asset_AR/Glb/kursi1.glb"
             poster="assets/img/Asset_AR/Png/kursi1.png"
@@ -209,26 +209,26 @@
 
             <button id="ar-failure">AR is not tracking!</button>
 
-            <div class="slider">
-              <div class="slides justify-content-center">
-                <button
-                  class="slide1 mx-lg-4 selected"
-                  onclick="switchSrc(this, 'kursi1')"
-                  style="background-image: url('assets/img/Asset_AR/Png/kursi1.png')"
-                ></button>
-                <button
-                  class="slide1 mx-lg-4"
-                  onclick="switchSrc(this, 'kursi2')"
-                  style="background-image: url('assets/img/Asset_AR/Png/kursi2.png')"
-                ></button>
-                <button
-                  class="slide1 mx-lg-4"
-                  onclick="switchSrc(this, 'kursi3')"
-                  style="background-image: url('assets/img/Asset_AR/Png/kursi3.png')"
-                ></button>
-              </div>
-            </div>
           </model-viewer>
+          <div class="slider">
+            <div class="slides">
+              <button
+                class="slide1 mx-lg-4 selected"
+                onclick="switchSrc(this, 'kursi1')"
+                style="background-image: url('assets/img/Asset_AR/Png/kursi1.png')"
+              ></button>
+              <button
+                class="slide1 mx-lg-4"
+                onclick="switchSrc(this, 'kursi2')"
+                style="background-image: url('assets/img/Asset_AR/Png/kursi2.png')"
+              ></button>
+              <button
+                class="slide1 mx-lg-4"
+                onclick="switchSrc(this, 'kursi3')"
+                style="background-image: url('assets/img/Asset_AR/Png/kursi3.png')"
+              ></button>
+            </div>
+          </div>
           </div>
 
           <!-- MEJA -->
