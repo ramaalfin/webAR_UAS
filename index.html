@@ -214,17 +214,17 @@
                 <button
                   class="slide1 selected"
                   onclick="switchSrc(this, 'kursi1')"
-                  style="background-image: url('assets/img/Asset_AR/kursi1.png')"
+                  style="background-image: url('assets/img/Asset_AR/Png/kursi1.png')"
                 ></button>
                 <button
                   class="slide1"
                   onclick="switchSrc(this, 'kursi2')"
-                  style="background-image: url('assets/img/Asset_AR/kursi2.png')"
+                  style="background-image: url('assets/img/Asset_AR/Png/kursi2.png')"
                 ></button>
                 <button
                   class="slide1"
                   onclick="switchSrc(this, 'kursi3')"
-                  style="background-image: url('assets/img/Asset_AR/kursi3.png')"
+                  style="background-image: url('assets/img/Asset_AR/Png/kursi3.png')"
                 ></button>
               </div>
             </div>
@@ -526,9 +526,10 @@
       const modelViewer = document.querySelector("model-viewer");
 
       window.switchSrc = (element, name) => {
-        const base = "assets/img/" + name;
-        modelViewer.src = base + ".glb";
-        modelViewer.poster = base + ".png";
+        const base_glb = "assets/img/Asset_AR/Glb/" + name;
+        const base_png = "assets/img/Asset_AR/Png/" + name;
+        modelViewer.src = base_glb + ".glb";
+        modelViewer.poster = base_png + ".png";
         const slides = document.querySelectorAll(".slide1");
         slides.forEach((element) => {
           element.classList.remove("selected");
