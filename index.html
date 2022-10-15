@@ -96,6 +96,7 @@
       </nav>
     </section>
 
+    <!-- BANNER -->
     <section class="container">
       <div class="row mx-0" id="header">
         <div class="col-xl-6 content-text">
@@ -122,21 +123,21 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="assets/img/bilal-mansuri-_nFgGYxeGD4-unsplash.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/img/inside-weather-BayIzHKkjM4-unsplash.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
                   src="assets/img/inside-weather-ej3UoXYMaRI-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/inside-weather-dbH_vy7vICE-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/tati-visual-w8ZvNb6YWkw-unsplash.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
@@ -174,71 +175,222 @@
     </section>
 
     <!-- 3D model -->
-    <section id="produk" class="mt-4 px-4">
+    <section id="produk" class="my-5 px-4">
       <div class="container">
         <nav class="nav nav-pills" id="pills-tab" role="tablist">
-          <a class="nav-link flex-fill text-center active" id="pills-sofa-tab" data-bs-toggle="pill" data-bs-target="#pills-sofa" type="button" role="tab" aria-controls="pills-sofa" aria-selected="true">sofa</a>
+          <a
+            class="nav-link flex-fill text-center active"
+            id="pills-sofa-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-sofa"
+            type="button"
+            role="tab"
+            aria-controls="pills-sofa"
+            aria-selected="true"
+            >sofa</a
+          >
 
-          <a class="nav-link flex-fill text-center" id="pills-meja-tab" data-bs-toggle="pill" data-bs-target="#pills-meja" type="button" role="tab" aria-controls="pills-meja" aria-selected="true">meja</a>
+          <a
+            class="nav-link flex-fill text-center"
+            id="pills-meja-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-meja"
+            type="button"
+            role="tab"
+            aria-controls="pills-meja"
+            aria-selected="true"
+            >meja</a
+          >
 
-          <a class="nav-link flex-fill text-center" id="pills-kursi-tab" data-bs-toggle="pill" data-bs-target="#pills-kursi" type="button" role="tab" aria-controls="pills-kursi" aria-selected="true">kursi</a>
+          <a
+            class="nav-link flex-fill text-center"
+            id="pills-kursi-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-kursi"
+            type="button"
+            role="tab"
+            aria-controls="pills-kursi"
+            aria-selected="true"
+            >kursi</a
+          >
         </nav>
-  
+
         <div class="tab-content" id="pills-tabContent">
           <!-- SOFA -->
-          <div class="flex-row-reverse tab-pane fade show active" id="pills-sofa" role="tabpanel" aria-labelledby="pills-sofa-tab">
-            <model-viewer
-            src="assets/img/Asset_AR/Glb/kursi1.glb"
-            poster="assets/img/Asset_AR/Png/kursi1.png"
-            shadow-intensity="1"
-            ar
-            ar-modes="scene-viewer quick-look"
-            auto-rotate
-            ar-scale="fixed"
-            camera-orbit="-30deg auto auto"
-            max-camera-orbit="auto 100deg auto"
-            camera-controls
-            touch-action="pan-y"
-            alt="A 3D model carousel"
+          <div
+            class="flex-row-reverse tab-pane fade show active"
+            id="pills-sofa"
+            role="tabpanel"
+            aria-labelledby="pills-sofa-tab"
           >
-            <button slot="ar-button" id="ar-button">View in your space</button>
+            <model-viewer
+              id="model-viewer-sofa"
+              src="assets/img/Asset_AR/Glb/sofa1.glb"
+              poster="assets/img/Asset_AR/Png/sofa1.png"
+              shadow-intensity="1"
+              ar
+              ar-modes="scene-viewer quick-look"
+              auto-rotate
+              ar-scale="fixed"
+              camera-orbit="-30deg auto auto"
+              max-camera-orbit="auto 100deg auto"
+              camera-controls
+              touch-action="pan-y"
+              alt="A 3D model carousel"
+            >
+              <button slot="ar-button" id="ar-button">
+                View in your space
+              </button>
 
-            <div id="ar-prompt">
-              <img src="assets/img/Asset_AR/hand.png" />
+              <div id="ar-prompt">
+                <img src="assets/img/Asset_AR/hand.png" />
+              </div>
+
+              <button id="ar-failure">AR is not tracking!</button>
+            </model-viewer>
+            <div class="slider">
+              <div class="slides">
+                <button
+                  class="slide1 mx-lg-4 selected"
+                  onclick="switchSrcSofa(this, 'sofa1')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/sofa1.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcSofa(this, 'sofa2')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/sofa2.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcSofa(this, 'sofa3')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/sofa3.png');
+                  "
+                ></button>
+              </div>
             </div>
-
-            <button id="ar-failure">AR is not tracking!</button>
-
-          </model-viewer>
-          <div class="slider">
-            <div class="slides">
-              <button
-                class="slide1 mx-lg-4 selected"
-                onclick="switchSrc(this, 'kursi1')"
-                style="background-image: url('assets/img/Asset_AR/Png/kursi1.png')"
-              ></button>
-              <button
-                class="slide1 mx-lg-4"
-                onclick="switchSrc(this, 'kursi2')"
-                style="background-image: url('assets/img/Asset_AR/Png/kursi2.png')"
-              ></button>
-              <button
-                class="slide1 mx-lg-4"
-                onclick="switchSrc(this, 'kursi3')"
-                style="background-image: url('assets/img/Asset_AR/Png/kursi3.png')"
-              ></button>
-            </div>
-          </div>
           </div>
 
           <!-- MEJA -->
-          <div class="tab-pane fade" id="pills-meja" role="tabpanel" aria-labelledby="pills-meja-tab">
+          <div
+            class="flex-row-reverse tab-pane fade show"
+            id="pills-meja"
+            role="tabpanel"
+            aria-labelledby="pills-meja-tab"
+          >
+            <model-viewer
+              id="model-viewer-meja"
+              src="assets/img/Asset_AR/Glb/meja1.glb"
+              poster="assets/img/Asset_AR/Png/meja1.png"
+              shadow-intensity="1"
+              ar
+              ar-modes="scene-viewer quick-look"
+              auto-rotate
+              ar-scale="fixed"
+              camera-orbit="-30deg auto auto"
+              max-camera-orbit="auto 100deg auto"
+              camera-controls
+              touch-action="pan-y"
+              alt="A 3D model carousel"
+            >
+              <button slot="ar-button" id="ar-button">
+                View in your space
+              </button>
 
+              <div id="ar-prompt">
+                <img src="assets/img/Asset_AR/hand.png" />
+              </div>
+
+              <button id="ar-failure">AR is not tracking!</button>
+            </model-viewer>
+            <div class="slider">
+              <div class="slides">
+                <button
+                  class="slide1 mx-lg-4 selected"
+                  onclick="switchSrcMeja(this, 'meja1')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/meja1.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcMeja(this, 'meja2')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/meja2.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcMeja(this, 'meja3')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/meja3.png');
+                  "
+                ></button>
+              </div>
+            </div>
           </div>
 
           <!-- KURSI -->
-          <div class="tab-pane fade" id="pills-kursi" role="tabpanel" aria-labelledby="pills-kursi-tab">
-            
+          <div
+            class="flex-row-reverse tab-pane fade"
+            id="pills-kursi"
+            role="tabpanel"
+            aria-labelledby="pills-kursi-tab"
+          >
+            <model-viewer
+              id="model-viewer-kursi"
+              src="assets/img/Asset_AR/Glb/kursi1.glb"
+              poster="assets/img/Asset_AR/Png/kursi1.png"
+              shadow-intensity="1"
+              ar
+              ar-modes="scene-viewer quick-look"
+              auto-rotate
+              ar-scale="fixed"
+              camera-orbit="-30deg auto auto"
+              max-camera-orbit="auto 100deg auto"
+              camera-controls
+              touch-action="pan-y"
+              alt="A 3D model carousel"
+            >
+              <button slot="ar-button" id="ar-button">
+                View in your space
+              </button>
+
+              <div id="ar-prompt">
+                <img src="assets/img/Asset_AR/hand.png" />
+              </div>
+
+              <button id="ar-failure">AR is not tracking!</button>
+            </model-viewer>
+            <div class="slider">
+              <div class="slides">
+                <button
+                  class="slide1 mx-lg-4 selected"
+                  onclick="switchSrcKursi(this, 'kursi1')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/kursi1.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcKursi(this, 'kursi2')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/kursi2.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcKursi(this, 'kursi3')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/kursi3.png');
+                  "
+                ></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -405,12 +557,26 @@
             <div class="col-xl-4 col-lg-4 mb-50">
               <div class="footer-widget">
                 <div class="footer-logo">
-                  <a href="index.html"
-                    ><img
-                      src="assets/img/WhatsApp_Image_2022-01-20_at_14.46.54-removebg-preview.png"
-                      class="img-fluid"
-                      alt="logo"
-                  /></a>
+                  <a href="index.html">
+                    <svg
+                      width="42"
+                      height="42"
+                      viewBox="0 0 42 42"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.5 15.75C3.5 8.98451 8.98451 3.5 15.75 3.5H29.75C30.7165 3.5 31.5 4.2835 31.5 5.25C31.5 6.2165 30.7165 7 29.75 7H15.75C10.9175 7 7 10.9175 7 15.75V29.75C7 30.7165 6.2165 31.5 5.25 31.5C4.2835 31.5 3.5 30.7165 3.5 29.75V15.75Z"
+                        fill="#0EC8F8"
+                      />
+                      <path
+                        d="M10.5 17.5C10.5 13.634 13.634 10.5 17.5 10.5H31.5C35.366 10.5 38.5 13.634 38.5 17.5V31.5C38.5 35.366 35.366 38.5 31.5 38.5H17.5C13.634 38.5 10.5 35.366 10.5 31.5V17.5Z"
+                        fill="#0EC8F8"
+                      />
+                    </svg>
+                  </a>
                 </div>
                 <div class="footer-text">
                   <p>
@@ -462,6 +628,7 @@
 
                 <div class="email-form">
                   <form
+                    id="contact"
                     action="https://formsubmit.co/ramaalfin7@gmail.com"
                     method="POST"
                   >
@@ -503,7 +670,9 @@
                       ></textarea>
                     </fieldset>
                     <fieldset>
-                      <button name="submit" type="submit">Submit</button>
+                      <button class="submitBtn" name="submit" type="submit">
+                        Submit
+                      </button>
                     </fieldset>
                   </form>
                 </div>
@@ -523,13 +692,39 @@
     </footer>
 
     <script type="module">
-      const modelViewer = document.querySelector("model-viewer");
+      const modelViewerSofa = document.querySelector("#model-viewer-sofa");
+      const modelViewerMeja = document.querySelector("#model-viewer-meja");
+      const modelViewerKursi = document.querySelector("#model-viewer-kursi");
 
-      window.switchSrc = (element, name) => {
+      window.switchSrcSofa = (element, name) => {
         const base_glb = "assets/img/Asset_AR/Glb/" + name;
         const base_png = "assets/img/Asset_AR/Png/" + name;
-        modelViewer.src = base_glb + ".glb";
-        modelViewer.poster = base_png + ".png";
+        modelViewerSofa.src = base_glb + ".glb";
+        modelViewerSofa.poster = base_png + ".png";
+        const slides = document.querySelectorAll(".slide1");
+        slides.forEach((element) => {
+          element.classList.remove("selected");
+        });
+        element.classList.add("selected");
+      };
+
+      window.switchSrcMeja = (element, name) => {
+        const base_glb = "assets/img/Asset_AR/Glb/" + name;
+        const base_png = "assets/img/Asset_AR/Png/" + name;
+        modelViewerMeja.src = base_glb + ".glb";
+        modelViewerMeja.poster = base_png + ".png";
+        const slides = document.querySelectorAll(".slide1");
+        slides.forEach((element) => {
+          element.classList.remove("selected");
+        });
+        element.classList.add("selected");
+      };
+
+      window.switchSrcKursi = (element, name) => {
+        const base_glb = "assets/img/Asset_AR/Glb/" + name;
+        const base_png = "assets/img/Asset_AR/Png/" + name;
+        modelViewerKursi.src = base_glb + ".glb";
+        modelViewerKursi.poster = base_png + ".png";
         const slides = document.querySelectorAll(".slide1");
         slides.forEach((element) => {
           element.classList.remove("selected");
