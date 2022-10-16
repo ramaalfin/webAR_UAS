@@ -30,7 +30,8 @@
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
     ></script>
 
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
     <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
@@ -758,28 +759,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-      AOS.init();
-      
-      let prevScrollPos = window.pageYOffset;
-      window.onscroll = function() {
-        let currentScrollPos = window.pageYOffset;
-        if(prevScrollPos > currentScrollPos){
-          document.querySelector('nav').style.top = "0";
-        } else {
-          document.querySelector('nav').style.top = "-100px";
-        }
-        prevScrollPos = currentScrollPos;
-      }
-
-      const navLinks = document.querySelectorAll('.nav-item')
-      const menuToggle = document.getElementById('navbarTogglerDemo02')
-      const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
-      navLinks.forEach((l) => {
-          l.addEventListener('click', () => { bsCollapse.toggle() })
-      })
-    </script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
