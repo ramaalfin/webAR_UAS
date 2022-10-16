@@ -29,11 +29,13 @@
       nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
     ></script>
+
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
   </head>
   <body>
     <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
       <nav
-        class="navbar navbar-expand-lg navbar-light p-lg-4 px-md-4 bg-body"
+        class="navbar navbar-expand-lg navbar-light p-lg-3 px-md-4 bg-body"
         style="font-family: Poppins, sans-serif"
       >
         <div class="container">
@@ -69,17 +71,20 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="menus collapse navbar-collapse justify-content-end"
             id="navbarTogglerDemo02"
           >
             <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a
-                  class="nav-link px-md-4 active"
+                  class="nav-link px-md-4"
                   aria-current="page"
-                  href="#tentang"
-                  >About</a
+                  href="#home"
+                  >Home</a
                 >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-md-4" href="#about">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link px-md-4" href="#produk">Products</a>
@@ -97,17 +102,15 @@
     </section>
 
     <!-- BANNER -->
-    <section class="container">
-      <div class="row mx-0" id="header">
+    <section id="home" class="container">
+      <div class="row mx-0" id="header" data-aos="fade-down">
         <div class="col-xl-6 content-text">
           <div class="title">
             <h1>Let's see your furniture on AR</h1>
           </div>
           <div class="deskripsi">
             <p class="descript-head">
-              3Daily menyediakan berbagai model 3D furnitur rumah agar calon
-              pembeli dapat merasakannya menggunakan teknologi Augmented Reality
-              (AR).
+              3Daily menghadirkan pengalaman baru menggunakan model 3D untuk pengguna agar dapat memilih furnitur yang diinginkan menggunakan Augmented Reality.
             </p>
           </div>
           <div>
@@ -174,9 +177,16 @@
       </div>
     </section>
 
+    <!-- About -->
+    <section id="about" class="pb-5 position-relative bg-dark px-4 mx-n3">
+      <div class="container">
+        <h3 class="text-white">About Us</h3>
+      </div>
+    </section>
+
     <!-- 3D model -->
     <section id="produk" class="my-5 px-4">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <nav class="nav nav-pills" id="pills-tab" role="tablist">
           <a
             class="nav-link flex-fill text-center active"
@@ -398,7 +408,7 @@
 
     <!-- OUR TEAM -->
     <section id="tim" class="pb-5 position-relative bg-dark px-4 mx-n3">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-md-8 text-start mb-5 mt-5">
             <h3 class="text-white z-index-1 position-relative">
@@ -551,7 +561,7 @@
     </section>
 
     <footer id="kontak" class="p-2 footer-section">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="footer-content pt-5">
           <div class="row">
             <div class="col-xl-4 col-lg-4 mb-50">
@@ -739,10 +749,37 @@
           ev.preventDefault();
         });
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+
+    <script src="node_modules/aos/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+      
+      let prevScrollPos = window.pageYOffset;
+      window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if(prevScrollPos > currentScrollPos){
+          document.querySelector('nav').style.top = "0";
+        } else {
+          document.querySelector('nav').style.top = "-100px";
+        }
+        prevScrollPos = currentScrollPos;
+      }
+
+      const navLinks = document.querySelectorAll('.nav-item')
+      const menuToggle = document.getElementById('navbarTogglerDemo02')
+      const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+      navLinks.forEach((l) => {
+          l.addEventListener('click', () => { bsCollapse.toggle() })
+      })
+    </script>
   </body>
 </html>
