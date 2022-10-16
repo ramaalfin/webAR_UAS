@@ -9,7 +9,7 @@ nav {
 
 .navbar{
   position: fixed;
-  z-index: 20;
+  z-index: 30;
   width: 100%;
   top: 0;
 }
