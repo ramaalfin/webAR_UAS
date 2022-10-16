@@ -411,8 +411,13 @@ fieldset {
   body #header {
     margin-top: 50px;
     margin-bottom: 50px;
+    flex-direction: column-reverse;
   }
 
+  #home{
+    margin-top: 15vh;
+  }
+  
   body .title h1 {
     font-size: 48px;
   }
@@ -435,7 +440,6 @@ fieldset {
 
   body #header {
     margin-top: 10px;
-    flex-direction: column-reverse;
   }
 
   .content-text {
