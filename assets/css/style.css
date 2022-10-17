@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #000;
+  background-color: #fff;
+}
+
 /* NAVBAR */
 
 nav {
@@ -38,6 +43,10 @@ nav.navbar-light .navbar-nav .nav-link.active {
 
 
 /* BAWAH NAVBAR */
+
+#home{
+  margin-top: 11vh;
+}
 
 .content-text {
   margin-top: 70px;
@@ -106,6 +115,14 @@ body .btn-blue {
 
 /* 3D model */
 /* This keeps child nodes hidden while the element loads */
+#produk .title{
+  font-weight: 700;
+}
+
+#produk .sub-title{
+  font-size: 18px;
+}
+
 :not(:defined) > * {
   display: none;
 }
@@ -115,14 +132,15 @@ body .btn-blue {
 }
 
 #produk nav {
-  border: 1px solid #d5d5d5;
   border-radius: 10px;
   padding: 10px;
+  background-color: #eee;
 }
 
 .nav-pills .nav-link{
   padding: 15px;
   border-radius: 10px;
+  color: #000;
 }
 
 .tab-content>.active {
@@ -131,7 +149,7 @@ body .btn-blue {
 
 .tab-pane{
   display: flex;
-  border: 1px solid #d5d5d5;
+  border: 1px solid #eee;
   padding: 20px;
   border-radius: 20px;
   align-items: center;
@@ -263,6 +281,9 @@ model-viewer[ar-tracking="not-tracking"] > #ar-failure {
 
 
 /* OUR TEAM */
+#tim{
+  background-color: #06283d;
+}
 
 .card .card-body {
   flex: 1 1 auto;
@@ -276,6 +297,9 @@ model-viewer[ar-tracking="not-tracking"] > #ar-failure {
   border-radius: 0.375rem;
 }
 
+.card-body p{
+  color: #7e7e7e;
+}
 
 
 /* FOOTER */
@@ -300,7 +324,7 @@ model-viewer[ar-tracking="not-tracking"] > #ar-failure {
 }
 .footer-text p {
   margin-bottom: 14px;
-  font-size: 14px;
+  font-size: 16px;
   color: #7e7e7e;
 }
 .footer-social-icon span {
@@ -370,7 +394,6 @@ fieldset {
 	border:1px solid #CCC;
 	margin:0 0 5px;
 	padding:10px;
-  font-weight: 500;
 }
 
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact textarea:hover {
@@ -413,10 +436,6 @@ fieldset {
     margin-bottom: 50px;
     flex-direction: column-reverse;
   }
-
-  #home{
-    margin-top: 12vh;
-  }
   
   body .title h1 {
     font-size: 48px;
@@ -431,6 +450,18 @@ fieldset {
     width: 100%;
     padding-left: 20px;
   }
+
+  #produk .title {
+    font-size: 28px;
+  }
+
+  #produk .sub-title {
+    font-size: 16px;
+  }
+
+  .nav-pills .nav-link {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 475px) {
@@ -440,6 +471,10 @@ fieldset {
 
   body #header {
     margin-top: 10px;
+  }
+
+  body .title h1 {
+    font-size: 40px;
   }
 
   .content-text {
