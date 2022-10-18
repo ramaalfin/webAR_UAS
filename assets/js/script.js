@@ -35,11 +35,12 @@ window.switchSrcSofa = (element, name) => {
     element.classList.remove("selected");
   });
   element.classList.add("selected"); 
-  
-  if (modelViewerSofa.src.match('assets/img/Asset_AR/Glb/Sofa1abu.glb')) {
-    modelViewerSofa.src = "assets/img/Asset_AR/Glb/sofa2.glb"
-  }
+
 };
+
+if (modelViewerSofa.src.match('assets/img/Asset_AR/Glb/Sofa1abu.glb')) {
+  modelViewerSofa.src = "assets/img/Asset_AR/Glb/sofa2.glb"
+}
 
 
 window.switchSrcMeja = (element, name) => {
