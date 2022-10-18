@@ -282,6 +282,11 @@ model-viewer[ar-tracking="not-tracking"] > #ar-failure {
   outline: 1px solid #4285f4;
 }
 
+.colors-container .color{
+  background-color: #0f52ba;
+  padding: 10px;
+}
+
 
 
 /* OUR TEAM */
@@ -531,7 +536,6 @@ fieldset {
 
   #produk .slides {
     display: flex;
-    justify-content: center;
   }
 
   .tab-content>.active {

@@ -30,6 +30,7 @@ window.switchSrcSofa = (element, name) => {
   modelViewerSofa.src = base_glb + ".glb";
   modelViewerSofa.poster = base_png + ".png";
   const slides = document.querySelectorAll(".slide1");
+  const colors = document.querySelector(".colors");
   
   slides.forEach((element) => {
     element.classList.remove("selected");
@@ -37,12 +38,6 @@ window.switchSrcSofa = (element, name) => {
   element.classList.add("selected"); 
 
 };
-
-function changeColor(){
-  if (switchSrcSofa.src = "assets/img/Asset_AR/Glb/Sofa1abu.glb"){
-    switchSrcSofa.src = "assets/img/Asset_AR/Glb/sofa2.glb"
-  }
-}
 
 window.switchSrcMeja = (element, name) => {
   const base_glb = "assets/img/Asset_AR/Glb/" + name;

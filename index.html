@@ -228,8 +228,8 @@
           >
             <model-viewer
               id="model-viewer-sofa"
-              src="assets/img/Asset_AR/Glb/Sofa1abu.glb"
-              poster="assets/img/Asset_AR/Png/Sofa1abu.png"
+              src="assets/img/Asset_AR/Glb/sofa1abu.glb"
+              poster="assets/img/Asset_AR/Png/sofa1abu.png"
               shadow-intensity="1"
               ar
               ar-modes="scene-viewer quick-look"
@@ -255,46 +255,53 @@
             <div class="choiceContainer">
               <!-- model button -->
               <div class="models">
-                <h6 class="my-3">Pilih Model</h6>
                 <div class="slider">
                   <div class="slides">
                     <button
                       class="slide1 mx-lg-4 selected"
-                      onclick="switchSrcSofa(this, 'Sofa1abu')"
+                      onclick="switchSrcSofa(this, 'sofa1abu')"
                       style="
-                        background-image: url('assets/img/Asset_AR/Png/Sofa1abu.png');
+                        background-image: url('assets/img/Asset_AR/Png/sofa1abu.png');
                       "
                     ></button>
                     <button
                       class="slide1 mx-lg-4"
-                      onclick="switchSrcSofa(this, 'sofa2')"
+                      onclick="switchSrcSofa(this, 'sofa1coklat')"
                       style="
-                        background-image: url('assets/img/Asset_AR/Png/sofa2.png');
+                        background-image: url('assets/img/Asset_AR/Png/sofa1coklat.png');
                       "
                     ></button>
                     <button
                       class="slide1 mx-lg-4"
-                      onclick="switchSrcSofa(this, 'sofa3')"
+                      onclick="switchSrcSofa(this, 'sofa2ungu')"
                       style="
-                        background-image: url('assets/img/Asset_AR/Png/sofa3.png');
+                        background-image: url('assets/img/Asset_AR/Png/sofa2ungu.png');
+                      "
+                    ></button>
+                    <button
+                      class="slide1 mx-lg-4"
+                      onclick="switchSrcSofa(this, 'sofa2putih')"
+                      style="
+                        background-image: url('assets/img/Asset_AR/Png/sofa2putih.png');
+                      "
+                    ></button>
+                    <button
+                      class="slide1 mx-lg-4"
+                      onclick="switchSrcSofa(this, 'sofa3coklattua')"
+                      style="
+                        background-image: url('assets/img/Asset_AR/Png/sofa3coklattua.png');
+                      "
+                    ></button>
+                    <button
+                      class="slide1 mx-lg-4"
+                      onclick="switchSrcSofa(this, 'sofa3coklat')"
+                      style="
+                        background-image: url('assets/img/Asset_AR/Png/sofa3coklat.png');
                       "
                     ></button>
                   </div>
                 </div>
-              </div>
-
-              <!-- color button -->
-              <div class="colors">
-                <h6 class="my-3">Pilih Warna</h6>
-                <div class="w-50 d-block mx-auto">
-                  <div class="color p-4 m-1 bg-primary text-white">
-                    <button type="button" onclick="changeColor()" value="ganti warna">ganti</button>
-                  </div>
-                  <div class="color p-4 m-1 bg-dark text-white">
-                    
-                  </div>
-                </div>
-              </div>
+              </div>              
             </div>
 
           </div>
@@ -308,8 +315,8 @@
           >
             <model-viewer
               id="model-viewer-meja"
-              src="assets/img/Asset_AR/Glb/meja1.glb"
-              poster="assets/img/Asset_AR/Png/meja1.png"
+              src="assets/img/Asset_AR/Glb/meja1abu.glb"
+              poster="assets/img/Asset_AR/Png/meja1abu.png"
               shadow-intensity="1"
               ar
               ar-modes="scene-viewer quick-look"
@@ -335,23 +342,44 @@
               <div class="slides">
                 <button
                   class="slide1 mx-lg-4 selected"
-                  onclick="switchSrcMeja(this, 'meja1')"
+                  onclick="switchSrcMeja(this, 'meja1abu')"
                   style="
-                    background-image: url('assets/img/Asset_AR/Png/meja1.png');
+                    background-image: url('assets/img/Asset_AR/Png/meja1abu.png');
                   "
                 ></button>
                 <button
                   class="slide1 mx-lg-4"
-                  onclick="switchSrcMeja(this, 'meja2')"
+                  onclick="switchSrcMeja(this, 'meja1merah')"
                   style="
-                    background-image: url('assets/img/Asset_AR/Png/meja2.png');
+                    background-image: url('assets/img/Asset_AR/Png/meja1merah.png');
                   "
                 ></button>
                 <button
                   class="slide1 mx-lg-4"
-                  onclick="switchSrcMeja(this, 'meja3')"
+                  onclick="switchSrcMeja(this, 'meja2ijo')"
                   style="
-                    background-image: url('assets/img/Asset_AR/Png/meja3.png');
+                    background-image: url('assets/img/Asset_AR/Png/meja2ijo.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcMeja(this, 'meja2putih')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/meja2putih.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcMeja(this, 'meja3coklat')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/meja3coklat.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcMeja(this, 'meja3cream')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/meja3cream.png');
                   "
                 ></button>
               </div>
@@ -367,8 +395,8 @@
           >
             <model-viewer
               id="model-viewer-kursi"
-              src="assets/img/Asset_AR/Glb/kursi1.glb"
-              poster="assets/img/Asset_AR/Png/kursi1.png"
+              src="assets/img/Asset_AR/Glb/kursi1coklat.glb"
+              poster="assets/img/Asset_AR/Png/kursi1coklat.png"
               shadow-intensity="1"
               ar
               ar-modes="scene-viewer quick-look"
@@ -394,23 +422,44 @@
               <div class="slides">
                 <button
                   class="slide1 mx-lg-4 selected"
-                  onclick="switchSrcKursi(this, 'kursi1')"
+                  onclick="switchSrcKursi(this, 'kursi1coklat')"
                   style="
-                    background-image: url('assets/img/Asset_AR/Png/kursi1.png');
+                    background-image: url('assets/img/Asset_AR/Png/kursi1coklat.png');
                   "
                 ></button>
                 <button
                   class="slide1 mx-lg-4"
-                  onclick="switchSrcKursi(this, 'kursi2')"
+                  onclick="switchSrcKursi(this, 'kursi1cream')"
                   style="
-                    background-image: url('assets/img/Asset_AR/Png/kursi2.png');
+                    background-image: url('assets/img/Asset_AR/Png/kursi1cream.png');
                   "
                 ></button>
                 <button
                   class="slide1 mx-lg-4"
-                  onclick="switchSrcKursi(this, 'kursi3')"
+                  onclick="switchSrcKursi(this, 'kursi2biru')"
                   style="
-                    background-image: url('assets/img/Asset_AR/Png/kursi3.png');
+                    background-image: url('assets/img/Asset_AR/Png/kursi2biru.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcKursi(this, 'kursi2putih')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/kursi2putih.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcKursi(this, 'kursi3coklat')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/kursi3coklat.png');
+                  "
+                ></button>
+                <button
+                  class="slide1 mx-lg-4"
+                  onclick="switchSrcKursi(this, 'kursi3abuabu')"
+                  style="
+                    background-image: url('assets/img/Asset_AR/Png/kursi3abuabu.png');
                   "
                 ></button>
               </div>
