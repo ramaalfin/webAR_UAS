@@ -38,10 +38,11 @@ window.switchSrcSofa = (element, name) => {
 
 };
 
-if (modelViewerSofa.src.match('assets/img/Asset_AR/Glb/Sofa1abu.glb')) {
-  modelViewerSofa.src = "assets/img/Asset_AR/Glb/sofa2.glb"
+function changeColor(){
+  if (switchSrcSofa.src = "assets/img/Asset_AR/Glb/Sofa1abu.glb"){
+    switchSrcSofa.src = "assets/img/Asset_AR/Glb/sofa2.glb"
+  }
 }
-
 
 window.switchSrcMeja = (element, name) => {
   const base_glb = "assets/img/Asset_AR/Glb/" + name;
