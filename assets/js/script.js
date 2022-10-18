@@ -30,11 +30,15 @@ window.switchSrcSofa = (element, name) => {
   modelViewerSofa.src = base_glb + ".glb";
   modelViewerSofa.poster = base_png + ".png";
   const slides = document.querySelectorAll(".slide1");
-  const color = document.querySelectorAll(".color");
+  
   slides.forEach((element) => {
     element.classList.remove("selected");
   });
   element.classList.add("selected"); 
+  
+  if (modelViewerSofa.src.match('assets/img/Asset_AR/Glb/Sofa1abu.glb')) {
+    modelViewerSofa.src = "assets/img/Asset_AR/Glb/sofa2.glb"
+  }
 };
 
 
