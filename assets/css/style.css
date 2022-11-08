@@ -379,7 +379,7 @@ model-viewer[ar-tracking="not-tracking"] > #ar-failure {
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: #ff5e14;
+  background: #06283d;
 }
 .footer-widget ul{
   padding: 0px;
@@ -421,7 +421,7 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:rgb(22, 92, 90);
+	background:#06283d;
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -429,7 +429,7 @@ fieldset {
 }
 
 #contact .submitBtn:hover {
-	background:var(--green);
+	background:#125279;
 	transition:background-color 0.3s ease-in-out;
 }
 
