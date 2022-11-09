@@ -563,7 +563,7 @@ fieldset {
   model-viewer {
     overflow-x: hidden;
     width: 100%;
-    height: 30vh;
+    height: 50vh;
   }
 
   .nav-pills .nav-link {
